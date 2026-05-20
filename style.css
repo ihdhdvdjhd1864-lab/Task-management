@@ -1,161 +1,187 @@
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: sans-serif;
-        transition: 0.5s;
-        background-image: url(img/Picsart_26-03-22_21-06-11-745.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-      }
-      a {
-        text-decoration: none;
-      }
-      li {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        border-right: 3px solid rgb(0, 136, 255);
-        box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.155);
-        background-color: rgba(255, 255, 255, 0.106);
-        backdrop-filter: blur(8px);
-        padding: 10px;
-        border-radius: 8px;
-        word-break: break-all;
-      }
-      .box-inbut {
-        display: flex;
-        padding: 20px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(255, 255, 255, 0.106);
-        backdrop-filter: blur(8px);
-        border-radius: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        z-index: 9999;
-      }
-      .box-inbut input {
-        width: 100%;
-        height: 50px;
-        padding: 4px;
-        border: 0;
-        outline: 0;
-        border: rgb(230, 230, 230) 2px solid;
-        border-radius: 8px;
-        transition: 0.5s;
-        font-size: 20px;
-        font-weight: 700;
-        background-color: rgba(255, 255, 255, 0.106);
-        backdrop-filter: blur(8px);
-      }
-      .box-inbut input:focus {
-        border: rgb(0, 136, 255) 2px solid;
-      }
-      .barnbutn {
-        width: 100%;
-        padding: 20px;
-      }
-      .Task {
-        padding: 10px;
-        border: 0;
-        outline: 0;
-        border-radius: 8px;
-        background-color: rgb(0, 136, 255);
-        font-size: 20px;
-        font-weight: 700;
-        transition: 0.5s;
-        width: 100%;
-        color: white;
-               margin-top:80px;
-      }
-      .box-inbut .dilid {
-        padding: 10px;
-        border: 0;
-        outline: 0;
-        border-radius: 8px;
-        background-color: rgb(0, 136, 255);
-        font-weight: 700;
-        transition: 0.5s;
-        margin-left: 20px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        white-space: nowrap;
-        display: none;
-      }
-      .box-inbut .dilid:hover,
-      .barnbutn .Task:hover {
-        background-color: rgb(0, 136, 255, 0.8);
-      }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  transition: 0.5s;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20250330/pngtree-open-laptop-on-the-desk-with-a-calendar-app-cup-beside-image_17156522.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
-      ul {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        border-radius: 8px;
-      }
-      .span11 {
-        font-weight: 700;
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-      }
-      .DiliD {
-        background-color: rgba(245, 201, 201, 0.915);
-        font-size: 16px;
-        font-weight: 700;
-        width: 70px;
-        padding: 5px;
-        border: none;
-        border-radius: 8px;
-        color: rgb(255, 0, 0);
-        width: 100%;
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  border-right: 3px solid rgb(0, 136, 255);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.155);
+  background-color: rgba(255, 255, 255, 0.106);
+  backdrop-filter: blur(8px);
+  padding: 10px;
+  border-radius: 8px;
+  word-break: break-all;
+}
+.box-inbut {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.106);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+.box-inbut input {
+  width: 100%;
+  padding: 3px;
+  border: 0;
+  outline: 0;
+  border: rgb(230, 230, 230) 2px solid;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+}
+.box-inbut input::placeholder {
+  color: rgb(185, 185, 185);
+  font-weight: 700;
+}
+.box-inbut input:focus {
+  border: rgb(0, 136, 255) 2px solid;
+}
+.barnbutn {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.barnbutn .Task {
+  padding: 3px;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  background-color: rgb(0, 136, 255);
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.5s;
+  width: 80%;
+  color: white;
+  margin-top: 60px;
+}
+.box-inbut .dilid {
+  padding: 3px;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  background-color: rgb(0, 136, 255);
+  font-weight: 700;
+  transition: 0.5s;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  white-space: nowrap;
+  display: none;
+}
+.box-inbut .dilid:hover,
+.barnbutn .Task:hover {
+  background-color: rgb(0, 136, 255, 0.8);
+}
 
-        transition: 0.5s;
-      }
-      .DiliD:hover {
-        background-color: rgba(255, 0, 0, 0.755);
-        color: white;
-      }
-      .mktamll {
-        background-color: rgb(217, 248, 210);
-        font-size: 16px;
-        font-weight: 700;
-        width: 70px;
-        padding: 5px;
-        border: none;
-        border-radius: 8px;
-        color: rgb(17, 203, 0);
-        transition: 0.5s;
-        width: 100%;
-      }
-      .mktamll:hover {
-        background-color: rgb(17, 203, 0);
-        color: white;
-      }
-      .tadal {
-        background-color: rgb(209, 230, 249);
-        font-size: 16px;
-        font-weight: 700;
-        width: 70px;
-        padding: 5px;
-        border: none;
-        border-radius: 8px;
-        color: rgb(2, 137, 255);
-        transition: 0.5s;
-        width: 100%;
-      }
-      .tadal:hover {
-        background-color: rgba(0, 136, 255, 0.814);
-        color: white;
-      }
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.span11 {
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  text-align: center;
+}
+.tadal {
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  width: 70px;
+  padding: 3px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(0, 136, 255);
+  transition: 0.5s;
+}
+.tadal:hover {
+  background-color: rgba(0, 136, 255, 0.755);
+  color: white;
+}
+.DiliD {
+  background-color: rgba(245, 201, 201, 0.915);
+  font-size: 16px;
+  font-weight: 700;
+  width: 70px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 0, 0);
+
+  transition: 0.5s;
+}
+.DiliD:hover {
+  background-color: rgba(255, 0, 0, 0.755);
+  color: white;
+}
+.mktamll {
+  background-color: rgb(217, 248, 210);
+  font-size: 16px;
+  font-weight: 700;
+  width: 70px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(17, 203, 0);
+  transition: 0.5s;
+}
+.mktamll:hover {
+  background-color: rgb(17, 203, 0);
+  color: white;
+}
+.tadal {
+  background-color: rgb(209, 230, 249);
+  font-size: 16px;
+  font-weight: 700;
+  width: 70px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(2, 137, 255);
+  transition: 0.5s;
+}
+.tadal:hover {
+  background-color: rgba(0, 136, 255, 0.814);
+  color: white;
+}
+.divv {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
