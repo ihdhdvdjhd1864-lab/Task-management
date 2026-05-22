@@ -28,7 +28,6 @@ li {
   backdrop-filter: blur(8px);
   padding: 10px;
   border-radius: 8px;
-  word-break: break-all;
 }
 .box-inbut {
   display: flex;
@@ -118,6 +117,10 @@ ul {
   color: rgb(255, 255, 255);
   transition: 0.5s;
   text-align: center;
+width: 100%;
+display: block;
+overflow-wrap: break-word;
+
 }
 .tadal {
   background-color: rgb(255, 255, 255);
