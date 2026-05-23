@@ -39,9 +39,10 @@ Task.addEventListener("click", function () {
     div.appendChild(tadal);
     div.appendChild(mktamll);
     li.appendChild(div);
+    span.textContent = input.value;
     ul.appendChild(li);
     saveTasks();
-    span.textContent = input.value;
+
     DiliD.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
     mktamll.innerHTML = `<i class="fa-solid fa-check"></i>`;
     tadal.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
