@@ -1,4 +1,4 @@
-Let Task = document.querySelector(".Task");
+let Task = document.querySelector(".Task");
 let input = document.querySelector("input");
 let dilidAll = document.querySelector(".dilid");
 let ul = document.querySelector("ul");
