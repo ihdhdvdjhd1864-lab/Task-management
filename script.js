@@ -164,7 +164,7 @@ transition: 0.5s;
 font-weight: 700;
 color: rgb(255, 255, 255);
 `;
-        saveTasks();
+        
       }
     });
 
