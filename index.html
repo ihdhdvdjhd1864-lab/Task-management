@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task list</title>
+    <title>Manage your tasks</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/color/96/task.png"
+      type="image/png"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -15,14 +20,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="clock-box">
+      <div class="dade-timr"></div>
+      <div class="dade-hour"></div>
+    </div>
     <div class="box-inbut">
-      <input type="text" placeholder="اكتب مهام" />
-      <button class="dilid">حذف الكل</button>
+      <input id="input11" type="text" placeholder="اكتب مهام" />
+      <button class="dilid">
+        <i class="fa-solid fa-trash-can"></i> Delete All
+      </button>
     </div>
     <div class="barnbutn">
-      <button class="Task">اضافه مهمه</button>
+      <button class="Task"><i class="fa-solid fa-plus"></i> Add Task</button>
+      <div class="connt">
+        <h3>عدد المهام <span id="count">0</span></h3>
+        <h3>تم اكمالها <span id="la123">0</span></h3>
+        <h3>المتبقية <span id="rema">0</span></h3>
+      </div>
     </div>
-    <ul></ul>
+
+    <ul id="ul"></ul>
+    <button class="up"><i class="fa-solid fa-chevron-up"></i></button>
 
     <script src="script.js"></script>
   </body>
