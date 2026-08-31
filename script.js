@@ -106,7 +106,6 @@ function shawdade() {
       lafture();
     });
   }
-  lafture();
 }
 input.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
@@ -169,13 +168,25 @@ window.addEventListener("scroll", function () {
 function lafture() {
   let la123 = document.querySelector("#la123");
   let rema = document.querySelector("#rema");
+  let h1 = document.querySelector("h1");
+  let clockbox = document.querySelector(".clock-box");
   let completedCount = dadaTscks.filter((task) => task.completed).length;
   la123.textContent = completedCount;
   rema.textContent = dadaTscks.length - completedCount;
+
+  if (dadaTscks.length > 0 && completedCount === dadaTscks.length) {
+    h1.classList.add("show");
+    clockbox.style.marginTop = "50px";
+    clockbox.style.transition = "0.5s ease";
+  } else {
+    h1.classList.remove("show");
+    clockbox.style.marginTop = "0";
+    clockbox.style.transition = "0.5s ease";
+  }
 }
 
 lafture();
-
+// ساعه و تاريخ
 function getDade() {
   // انشاء  ساعه رقميه
   let dadeTimr2 = document.querySelector(".dade-timr");

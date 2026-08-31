@@ -48,6 +48,31 @@ body {
     var(--bg);
   overflow-x: hidden;
 }
+h1 {
+  margin: 10px auto;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  color: var(--white);
+  position: fixed;
+  top: 10px;
+  right: -450px;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #fbfafa42;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: fit-content;
+}
+h1 i {
+  color: var(--accent);
+}
+h1.show {
+  opacity: 1;
+  right: 0;
+  transition: 0.3s ease;
+}
 
 /* =========================
    BACKGROUND EFFECT
@@ -551,7 +576,9 @@ body::after {
   body {
     padding: 25px 14px 80px;
   }
-
+  h1 {
+    font-size: 18px;
+  }
   .clock-box {
     padding: 18px;
     flex-direction: column;
@@ -572,7 +599,7 @@ body::after {
     padding: 0 20px;
     width: 100%;
   }
-  #input11{
+  #input11 {
     padding: 20px;
     width: 100%;
   }
