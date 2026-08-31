@@ -176,7 +176,7 @@ function lafture() {
 
   if (dadaTscks.length > 0 && completedCount === dadaTscks.length) {
     h1.classList.add("show");
-    clockbox.style.marginTop = "75px";
+    clockbox.style.marginTop = "80px";
     clockbox.style.transition = "0.5s ease";
   } else {
     h1.classList.remove("show");
