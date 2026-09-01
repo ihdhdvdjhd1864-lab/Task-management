@@ -48,31 +48,37 @@ body {
     var(--bg);
   overflow-x: hidden;
 }
-h1 {
-  margin: 10px auto;
-  text-align: center;
-  font-family: "DM Serif Display", serif;
-  font-size: 24px;
-  color: var(--white);
-  position: absolute;
-  top: 10px;
-  right: -450px;
-  opacity: 0;
-  transition: 0.3s ease;
-  background-color: #fbfafa42;
-  backdrop-filter: blur(20px);
-  border-radius: 15px;
-  padding: 10px 20px;
-  width: fit-content;
+/* ضبط الاتجاه العام للصفحة */
+body {
+  direction: rtl;
+  text-align: right;
 }
-h1 i {
-  color: var(--accent);
+
+/* ضبط محاذاة عناصر الساعة */
+.clock-box {
+  direction: rtl;
 }
-h1.show {
-  opacity: 1;
-  right: 0;
-  transition: 0.3s ease;
+
+.dade-timr,
+.dade-hour {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
 }
+
+/* ضبط إدخال النص والزر */
+.box-inbut input {
+  text-align: right;
+}
+
+.dilid {
+  direction: ltr; /* للحفاظ على شكل أيقونة Delete All بالإنجليزية */
+}
+
+.Task {
+  direction: ltr; /* للحفاظ على زر Add Task بالإنجليزية */
+}
+
 
 /* =========================
    BACKGROUND EFFECT
